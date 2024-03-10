@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  background-color: #00000000;
+  
+}
+::-webkit-scrollbar-thumb{
+  background: orange;
+  border-radius: 9px;
+ 
+}
+::-webkit-scrollbar-track-piece{
+  background-color: #121924;
+}
+::-webkit-scrollbar-button{
+  background-color: orange;
+}
+
+
+.logo {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  line-height: 70%;
+  position: relative;
+  width: 20%;
+  position: absolute;
+  cursor: pointer;
+  justify-content: center;
+  align-items: self-start;
+  height: 100%;
+  overflow: hidden;
+  margin: auto 1rem;
+  bottom: 1px;
+  text-shadow: 3px 1px 4px #0000007a;
+}
+
+.logo .sub-line {
+  font-size: 0.5em;
+  top: 1rem;
+  position: relative;
+  width: 80%;
+  margin: 0 1.7rem;
+  color: #ffffff;
+  text-shadow: 0 0 2px #ffa500;
+}
+
+.logo #main-logo {
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffa500;
+  font-size: 1.2rem;
+  position: fixed;
+}
+
+
+body{
+  position: absolute;
+}
+
+.navigation{
+  height: 3.5rem;
+  border-bottom: 1px solid orange;
+  width: 100vw;
+  position: sticky;
+  z-index: 7;
+  background: linear-gradient(to right, #121924, #0b0d0f);
+
+
+}
+
+.main-container{
+  width: 100vw;
+  height: calc(100vh - 3.5rem);
+  background-color: aquamarine;
+  display: flex;
+ 
+}
+
+
+
+.main-container .aside-section{
+  background-color: bisque;
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: hidden;
+}
+
+.main-container .main-left{
+ width: 350px;
+ background: linear-gradient(to top, #121924, #0b0d0f);
+
+}
+.main-container .main-right{
+  width: 100%;
+  background: linear-gradient(to bottom, #121924, #0b0d0f);
+  color: white;
+  text-align: justify;
+  padding: 2rem 10rem 2rem 2rem;
+}
+.main-container .main-right h1{
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 2rem 0;
+  margin-top: 3rem;
+  text-shadow: 0 0 20px #ffa500;
+}
+.main-container .main-right h2{
+  font-size: 1.5rem;
+  color: #ffa600;
+  margin: 1rem 0;
+}
+.main-container .main-right p{
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
